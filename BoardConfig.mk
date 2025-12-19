@@ -9,6 +9,12 @@ KERNEL_PATH := $(DEVICE_PATH)-kernel
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
 

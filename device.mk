@@ -287,5 +287,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# GameBar
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/advan/X1/X1-vendor.mk)

@@ -278,6 +278,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # Wi-Fi
+$(call soong_config_set,wpa_supplicant_8,wifi_disable_wpa_version_3,true)
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \

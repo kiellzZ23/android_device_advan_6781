@@ -16,9 +16,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Blur
 TARGET_ENABLE_BLUR := true
 
-# GMS
-WITH_GMS := true
-
 # bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -28,7 +25,17 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 SURFACE_FLINGER_BOOST := true
 BYPASS_CHARGE_SUPPORTED := true
-BYPASS_CHARGE_SUPPORTED := true
+PERF_ANIM_OVERRIDE := true
+
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 64
+AXION_CAMERA_FRONT_INFO := 8
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := F1ELL_|_エル
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := MediaTek_Helio_G100
 
 PRODUCT_NAME := lineage_X1
 PRODUCT_DEVICE := X1

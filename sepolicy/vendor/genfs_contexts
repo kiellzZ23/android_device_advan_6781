@@ -20,10 +20,10 @@ genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_fa
 genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
 
 # Proc
-genfscon proc /sys/kernel/sched_min_granularity_ns u:object_r:proc_sched:s0
+# genfscon proc /sys/kernel/sched_min_granularity_ns u:object_r:proc_sched:s0
 
 # Touchpanel
-genfscon sysfs /devices/platform/common_node/gesture                                                      u:object_r:vendor_sysfs_touchpanel:s0
+# genfscon sysfs /devices/platform/common_node/gesture                                                      u:object_r:vendor_sysfs_touchpanel:s0
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/1a000000.camisp_legacy/wakeup                                                          u:object_r:sysfs_wakeup:s0

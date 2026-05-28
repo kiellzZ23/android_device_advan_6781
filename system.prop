@@ -1,2 +1,6 @@
 # Camera
 vendor.debug.camera.single_main2=1
+
+ro.product.marketname=Advan X1
+ro.infinity.soc=MediaTek Helio G100
+ro.infinity.camera=64MP + 8MP

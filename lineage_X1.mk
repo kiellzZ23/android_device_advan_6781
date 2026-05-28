@@ -17,7 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := true
 
 # GMS
-WITH_GMS := true
+WITH_GMS := false
 
 # bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -27,7 +27,6 @@ TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 SURFACE_FLINGER_BOOST := true
-BYPASS_CHARGE_SUPPORTED := true
 BYPASS_CHARGE_SUPPORTED := true
 
 PRODUCT_NAME := lineage_X1

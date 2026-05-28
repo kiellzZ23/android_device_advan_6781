@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/advan/X1/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Blur
 TARGET_ENABLE_BLUR := true
@@ -29,7 +29,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 SURFACE_FLINGER_BOOST := true
 BYPASS_CHARGE_SUPPORTED := true
 
-PRODUCT_NAME := lineage_X1
+PRODUCT_NAME := infinity_X1
 PRODUCT_DEVICE := X1
 PRODUCT_MANUFACTURER := ADVAN
 PRODUCT_BRAND := ADVAN

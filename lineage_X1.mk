@@ -13,18 +13,22 @@ $(call inherit-product, device/advan/X1/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Enable features
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_PIXEL_CHARGING := true
-PERF_ANIM_OVERRIDE := true
+# Blur
 TARGET_ENABLE_BLUR := true
-WITH_GMS := false
+
+# GMS
+WITH_GMS := true
+
+# bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+
 TARGET_DISABLE_MATLOG := true
 TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 SURFACE_FLINGER_BOOST := true
+BYPASS_CHARGE_SUPPORTED := true
+BYPASS_CHARGE_SUPPORTED := true
 
 PRODUCT_NAME := lineage_X1
 PRODUCT_DEVICE := X1

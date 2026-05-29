@@ -627,6 +627,24 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# Display (Mali)
+vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib64/arm.graphics-V1-ndk_platform.so
+
+# Display (Mali) - Mali G57 MC2 v38p1
+vendor/lib/egl/libGLES_mali.so
+vendor/lib/hw/vulkan.mali.so
+vendor/lib/libarm_egl_properties_sysprop.so
+vendor/lib/libarm_gralloc_properties_sysprop.so
+vendor/lib/liblibarm_mali_config_sysprops.so
+vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/hw/vulkan.mali.so
+vendor/lib64/libarm_egl_properties_sysprop.so
+vendor/lib64/libarm_gralloc_properties_sysprop.so
+vendor/lib64/libgpumem.so
+vendor/lib64/libgpuservice.so
+vendor/lib64/libgpuwork.so
+vendor/lib64/liblibarm_mali_config_sysprops.so
+
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc

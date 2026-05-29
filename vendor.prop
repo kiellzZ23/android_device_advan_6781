@@ -60,6 +60,8 @@ ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1
 debug.mediatek.appgamepq_compress=1
 graphics.gpu.profiler.support=true
+vendor.mali.base_protected_max_core_count=2
+debug.mali.disable_backend_affinity=true
 ro.vendor.pq.mtk_pq_video_whitelist_support=0
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.pq.mtk_scltm_support=0
@@ -146,6 +148,7 @@ ro.lmk.swap_free_low_percentage=100
 
 # Media
 debug.stagefright.c2inputsurface=-1
+ro.vendor.mtk.c2.vdec.fmt.support.level=2
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
 media.stagefright.thumbnail.prefer_hw_codecs=true

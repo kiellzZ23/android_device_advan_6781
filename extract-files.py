@@ -68,6 +68,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock')
         .add_needed('libbase_shim.so'),
+    ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v33.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl-v33.so'),
     ('vendor/lib/libsysenv.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
@@ -98,7 +102,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/mt6789/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
     ('system_ext/lib64/libarmnn_ndk.mtk.so', 'vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/mt6789/lib3a.flash.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/mt6789/lib3a.ae.stat.so', 'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/lib3a.sensors.flicker.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
-    .add_needed('liblog.so'),
+        .add_needed('liblog.so'),
     'vendor/lib64/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/hw/sensors.mediatek.V2.0.so': blob_fixup()
@@ -155,7 +159,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libsfplugin_ccodec_utils-v33.so': blob_fixup()
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v33.so')
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
-}  # fmt: skip
+}
 
 module = ExtractUtilsModule(
     'X1',

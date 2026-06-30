@@ -687,7 +687,7 @@ vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/mt6789/libDR.so;SYMLINK=vendor/lib64/libDR.so
-vendor/lib64/mt6789/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
+vendor/lib64/mt6789/libmnl.so:vendor/lib64/libmnl-v33.so;FIX_SONAME
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
@@ -856,7 +856,7 @@ vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-v33.so;FIX_SONAME|233
 vendor/lib64/libcodec2_vpp_qt_plugin.so|5d210d4288f345e083fb1d4c6e972a52ba597a72|99fd6008b4401b6746f7aada326d732bfadfd0ec
 vendor/lib64/libcodec2_vpp_rs_plugin.so|ccc62c65dd73e9fd3498937f82f15bb0ac1a2880|74a3204e575429b04b5825058fb9c83ac582b228
 vendor/lib64/libhevce_sb.ca7.android.so|4b82fecf4b7ea1d51f4681709e2dd1e7bfef5268
-vendor/lib64/libformatter.so|bd586eb4d91326a2671bc6d85d740ba8053ba06c
+vendor/lib64/libformatter.so:vendor/lib64/libformatter-v33.so;FIX_SONAME
 vendor/lib64/libsfplugin_ccodec_utils.so:vendor/lib64/libsfplugin_ccodec_utils-v33.so;FIX_SONAME|abb5c49dcab8b4dce0a6e5e87f02d0050053943e|91450bb8c055a146d86f02dd8b13b4a8a1e70e94
 vendor/lib64/libvcodec_oal.so|da1998afa24673382dfe93dbce139d332f6fc1d2
 vendor/lib64/libvcodecdrv_header_stub.so|4a91e75bf7041a77724b3f81ca7648a163b9873b

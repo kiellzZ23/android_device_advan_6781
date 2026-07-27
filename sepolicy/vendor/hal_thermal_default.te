@@ -1,0 +1,3 @@
+# Needed for reporting thermal stats event
+allow hal_thermal_default fwk_stats_service:service_manager find;
+binder_call(hal_thermal_default, servicemanager)

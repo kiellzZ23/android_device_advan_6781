@@ -1,0 +1,80 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.mt6789",
+    src: "fstab.mt6789",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "init.connectivity.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6789.rc",
+    src: "init.mt6789.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6789.power.rc",
+    src: "init.mt6789.power.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6789.usb.rc",
+    src: "init.mt6789.usb.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "init.mtkgki.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "init.project.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.mt6789.rc",
+    src: "init.recovery.mt6789.rc",
+    relative_install_path: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "init.sensor_2_0.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6789.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.mt6789.rc",
+    vendor: true,
+}
